@@ -22,20 +22,20 @@ Reguired installations:
 * Jupyter Notebooks (Anaconda Distribution)
 * Python 3.8.5
 
-
-1. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
-
-2. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
-
-3. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
-
-4. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
-
-5. (Optional) **If you are using AWS**, install Tensorflow.
+1. Clone the repository and navigate to the downloaded folder.
 ```
-sudo python3 -m pip install -r requirements/requirements-gpu.txt
+    git clone https://github.com/tinachientw/DSND_Dog_Breed_Classification
+    cd DSND_Dog_Breed_Classification
 ```
-    
+
+2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
+
+3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+
+4. Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
+
+5. (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
+
 6. Switch [Keras backend](https://keras.io/backend/) to TensorFlow.
     - __Linux__ or __Mac__: 
         ```
@@ -50,7 +50,7 @@ sudo python3 -m pip install -r requirements/requirements-gpu.txt
 ## File Descriptions <a name="files"></a>
 
 1. Bottleneck features:
-    If you don't want to compute the bottleneck features again. You can download the features I have computed by following link.
+    If you don't want to compute the bottleneck features again. You can download the features I have computed by following link. Make sure you save the features under the `bottleneck_features` folder.
     * https://drive.google.com/drive/folders/1yHiwqBCRa0RzRzlEGMri5Xr6P6TbqtHB?usp=sharing
     
 2. model:
